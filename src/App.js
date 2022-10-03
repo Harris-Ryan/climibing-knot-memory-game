@@ -1,13 +1,14 @@
 import './App.css';
-import { CardLayout } from './components/gameBoard/CardLayout';
+import Header  from './components/Header';
+import Game from './components/Game';
+// import { Footer } from './components/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>Climbing Knot Memory Game</h1>
-      <h4>Choose your knot - just make sure you don't choose the same one twice!</h4>
-
-      <CardLayout />
+      <Header />
+      <Game />
     </div>
   );
 }
