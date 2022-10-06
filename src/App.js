@@ -1,17 +1,15 @@
 import styled from 'styled-components'
-// import Header  from './components/Header';
+import Header  from './components/Header';
 import Game from './components/Game';
-import CardLayout from '../src/components/gameBoard/CardLayout';
 // import Footer from './components/Footer';
 
 
 function App() {
   return (
     <GameWrapper>
-      {/* <Header /> */}
+      <Header />
       <Game />
       {/* <Footer /> */}
-      <CardLayout />
     </GameWrapper>
   );
 }
