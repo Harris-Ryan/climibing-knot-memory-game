@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from 'styled-components'
-import Card from './Card.js';
+import Card from './Card';
 import data from "../../data";
 
 
-const CardLayout = () => {
-  const knotCards = data.climbingKnots.map((knot) => (
-    <Card key={knot.id} knot={knot} />
-  ))
+const CardLayout = () => { 
+
+  const [knotCards, setKnotCards] = useState(data);
+
+  const knot = knotCards.map((knot) => {
+    <Card image={knot.image} name={knot.name} key={knot.id} />
+  });
 
   return (
-    <CardLayoutWrapper>{knotCards}</CardLayoutWrapper>
+    <CardLayoutWrapper>
+      {knot}
+    </CardLayoutWrapper>
   );
-};
+}
 
 
 const CardLayoutWrapper = styled.div`

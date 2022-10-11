@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from 'styled-components';
 import CardLayout from "../components/gameBoard/CardLayout";
-import data from '../data';
 
 
 const Game = () => {
-  const [knots, setKnots] = useState(data.climbingKnots);
-  // const [clickedKnots, setClickedKnots] = useState([]);
-  // const [currentScore, setCurrentScore] = useState(0);
-  // const [highestScore, setHighestScore] = useState(0);
-
 
   return (
     <GameWrapper>

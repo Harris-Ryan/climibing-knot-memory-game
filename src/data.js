@@ -1,9 +1,8 @@
-let data = {
-  climbingKnots: [
+let data = [
     {
       id: 1,
       name: 'Butterfly knot',
-      image: '/assets/butterfly.jpeg',
+      image: './assets/butterfly.jpeg',
       selected: false,
     },
     {
@@ -72,13 +71,12 @@ let data = {
       image: '/assets/prusik.jpeg',
       selected: false,
     },
-    {
-      id: 13,
-      name: 'Triple overhand',
-      image: '/assets/triple-overhand.jpeg',
-      selected: false,
-    },
-  ]
-}
+    // {
+    //   id: 13,
+    //   name: 'Triple overhand',
+    //   image: '/assets/triple-overhand.jpeg',
+    //   selected: false,
+    // },
+  ];
 
 export default data;

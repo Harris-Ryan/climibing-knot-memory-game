@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-const Card = ({ knot, }) => {
+const Card = (props) => {
+
+  const { name, image } = props;
 
   return (
     <CardWrapper>
-      <Image
-        src={knot.image}
-        alt={knot.name}
+      <Image 
+        src={image}
+        alt={name}
       />
-      <Name>{knot.name}</Name>
+      <Name>{name}</Name>
     </CardWrapper>
   );
 };
@@ -21,7 +23,7 @@ const CardWrapper = styled.div`
   flex-direction: column;
   width: 150px;
   border-radius: 20px;
-  background-color: green;
+  background-color: ${({ theme }) => theme.colors.light};
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: transform 0.3s;
   cursor: pointer;
@@ -31,7 +33,7 @@ const CardWrapper = styled.div`
 `
 
 const Image = styled.img`
-  padding: 0.5rem;
+  padding: 4rem;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 `
